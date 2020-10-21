@@ -43,10 +43,30 @@ public class Day2HW {
 
         }
 */
+
+/*
+        // Task 2. Написать программу, которая считывает 5-и значное число с клавиатуры и выводит цифры из которого оно состоит. Например: считывается число "54698". Выводится: 5 4 6 9 8.
+        // Ver 2
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 5-digit number:");
+        String line = sc.nextLine();
+
+        if (line.length() != 5) {
+            System.out.println("Make sure you enter 5-digit number");
+            return;
+        }
+
+        for (int i = 0; i < line.length(); i++) {
+            char c = line.charAt(i);
+            System.out.println(c);
+        }
+ */
+
 /*
 
         // Task 3. Написать программу, которая считает 4 числа c клавиатуры и выведет на экран самое большее из них. И самое меньшее :)
         // Форматирование сжато, что бы поместить на скриншот
+        // Ver 1
         System.out.println("Enter 4 numbers");
         Scanner sc = new Scanner(System.in);
         int n1 = sc.nextInt();         int n2 = sc.nextInt();         int n3 = sc.nextInt();         int n4 = sc.nextInt();
@@ -64,6 +84,29 @@ public class Day2HW {
         System.out.println("Minimum value is: " + min);
 
 */
+        /*
+        // Ver 2
+        System.out.println("Enter 4 numbers:");
+        Scanner sc = new Scanner(System.in);
+
+        int n = 4;
+        int x;
+        int y;
+        int max = 0;
+        int min = Integer.MAX_VALUE;
+
+        while (n > 0) {
+            x = sc.nextInt();
+            y = x;
+            if (x > max) max = x;
+            if (y < min) min = y;
+            n--;
+        }
+        System.out.println("Maximum value is:" + max);
+        System.out.println("Minimum value is:" + min);
+        //System.out.println(Integer.MAX_VALUE+" "+Integer.MIN_VALUE);
+         */
+
 
       //Task 5. ver 1
         // Треугольник существует только тогда, когда сумма длин любых двух его сторон больше третьей.
